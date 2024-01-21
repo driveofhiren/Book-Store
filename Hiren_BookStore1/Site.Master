@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Hiren_BookStore.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Hiren's Books</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/site.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            
+            <div class="row">
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <asp:HyperLink ID="lnkHome" runat="server" NavigateUrl="~/default.aspx" CssClass="btn btn-primary" Text="Visit Home" />
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <asp:HyperLink ID="lnkProducts" runat="server" NavigateUrl="~/Products.aspx" CssClass="btn btn-primary" Text="View Products" />
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <asp:HyperLink ID="lnkCart" runat="server" NavigateUrl="~/Cart.aspx" CssClass="btn btn-primary" Text="Go to Cart" />
+            </div>
+        </div>
+    </div>
+      <div class="col-md-3">
+    <div class="card">
+        <div class="card-body">
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx" CssClass="btn btn-primary" Text="Login" />
+        </div>
+    </div>
+</div>
+      <div class="col-md-3">
+    <div class="card">
+        <div class="card-body">
+            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Admin.aspx" CssClass="btn btn-primary" Text="Admin" />
+        </div>
+    </div>
+</div>
+                      <div class="col-md-3">
+    <div class="card">
+        <div class="card-body">
+            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Addnew.aspx" CssClass="btn btn-primary" Text="Add new Book" />
+        </div>
+    </div>
+</div>
+                      <div class="col-md-3">
+    <div class="card">
+        <div class="card-body">
+            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/AddGenre.aspx" CssClass="btn btn-primary" Text="Add New Genre" />
+        </div>
+    </div>
+</div>
+</div>
+            <header class="jumbotron">
+    <h1>Explore Hiren's books</h1>
+    <div class="col-sm-12">
+        <asp:Label ID="lblWelcome" runat="server" CssClass="text-capitalize"></asp:Label>
+    </div>
+</header>
+        
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+            </div>
+    </form>
+</body>
+</html>
