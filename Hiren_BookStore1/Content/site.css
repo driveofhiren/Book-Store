@@ -1,0 +1,73 @@
+﻿/* Custom Styles for Page */
+body {
+    background-color: #f5f5f5;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:ghostwhite
+}
+.title{
+    box-shadow:5px 5px 5px black;
+    padding:5px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to top, #34f5c8, #ff7760);
+}
+.thumbnail
+{ 
+    height:400px
+}
+.jumbotron {
+    background-image: url("/Images/banner.jpg");
+    background-size: cover;
+    padding: 150px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    min-height: 300px;
+}
+
+.form-horizontal {
+    padding-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+#lblUnitPrice {
+    font-weight: bold;
+    color:maroon;
+    font-size:22px
+}
+
+.btn {
+    background-color: blueviolet; 
+    color: ghostwhite;
+    border: none;
+    transition: background-color 0.3s;
+    margin-top: 5px;
+}
+.btn:hover {
+        background-color: darkmagenta ;
+            color : blanchedalmond;
+    }
+label{
+    margin-top:5px;
+}
+.contact
+{
+    margin-left:10px;
+}
+.row {
+    margin-bottom: 20px;
+}
+h1 {
+    text-shadow: 2px 3px 5px grey !important;
+}
+h4{
+    font-size: 24px;
+    text-align:center
+}
